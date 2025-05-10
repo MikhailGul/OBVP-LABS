@@ -1,0 +1,23 @@
+services:
+  fastapi:
+    image: ghcr.io/mikhailgul/myimage:1
+    container_name: fastapi_app
+    restart: always
+    environment:
+      - ENV=production
+    networks:
+      - app_network
+  nginx:
+    image: nginx:latest
+    container_name: my_nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx-conf/nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - fastapi
+    networks:
+      - app_network
+networks:
+  app_network:
+    driver: bridge
