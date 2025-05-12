@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   fastapi:
-    image: ghcr.io/15kamani/myimage:1
+    image: ghcr.io/mikhailgu/myimage:1
     # задание 1
     # container_name: fastapi_app
     # restart: always
