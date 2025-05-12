@@ -16,7 +16,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 
 # Настройки
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_r_Isakov:12345@77.91.86.135/isp_r_Isakov"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_r_Gulyaev:12345@77.91.86.135/isp_r_Gulyaev"
 SECRET_KEY = '8y7w4n9aoofd9h896409n5xgujbjnp9u'
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
