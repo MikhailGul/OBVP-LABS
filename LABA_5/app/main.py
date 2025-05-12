@@ -16,7 +16,7 @@ from fastapi.responses import HTMLResponse
 from dotenv import load_dotenv
 import os
 
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_r_Yankovskaya:12345@77.91.86.135/isp_r_Yankovskaya"
+SQLALCHEMY_DATABASE_URL = "mysql+pymysql://isp_r_Gulyaev:12345@77.91.86.135/isp_r_Gulyaev"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine, autoflush=False)
