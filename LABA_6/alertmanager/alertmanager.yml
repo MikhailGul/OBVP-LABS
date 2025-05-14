@@ -18,8 +18,8 @@ route:
 receivers:
   - name: "fastapi_telegram"
     telegram_configs:
-      - bot_token: "7704362998:AAHXlsQ9moomupcZwH3DA-3qzdsEzGNSc-U"
-        chat_id: 5035051703
+      - bot_token: "7604485094:AAHj5p4ugURDgqW8QzO3Cl_VDC84MsWeCO4"
+        chat_id: 655340219
         parse_mode: "Markdown"
         message: |
           {{ if eq .CommonLabels.severity "critical" }}
@@ -36,8 +36,8 @@ receivers:
 
   - name: "rabbitmq_telegram"
     telegram_configs:
-      - bot_token: "7704362998:AAHXlsQ9moomupcZwH3DA-3qzdsEzGNSc-U"
-        chat_id: 5035051703
+      - bot_token: "7604485094:AAHj5p4ugURDgqW8QzO3Cl_VDC84MsWeCO4"
+        chat_id: 655340219
         parse_mode: "Markdown"
         message: |
           {{ if eq .CommonLabels.severity "critical" }}
